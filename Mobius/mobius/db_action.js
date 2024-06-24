@@ -78,7 +78,6 @@ exports.getConnection = function(callback) {
     mysql_pool.getConnection((err, connection) => {
         if (err) {
             callback('500-5');
-            console.log(err);
         }
         else {
             if (connection) {
